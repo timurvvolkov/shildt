@@ -1,4 +1,4 @@
-package ru.timurvvolkov.chapter07.add;
+package ru.timurvvolkov.chapter07.add13;
 
 public class RectDemo {
     public static void main(String[] args) {

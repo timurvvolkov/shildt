@@ -1,4 +1,4 @@
-package ru.timurvvolkov.chapter07.add;
+package ru.timurvvolkov.chapter07.add13;
 
 public class Triangle {
     Point p1, p2, p3;
