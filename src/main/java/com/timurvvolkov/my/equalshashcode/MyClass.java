@@ -26,10 +26,17 @@ public class MyClass {
     }
 
     public static void main(String[] args) {
-        MyClass myClass1 = new MyClass(1, 2);
+        MyClass myClass1 = new MyClass(2, 1);
         MyClass myClass2 = new MyClass(2, 1);
+        MyClass myClass3 = new MyClass(2, 2);
         System.out.println(myClass1.hashCode());
         System.out.println(myClass2.hashCode());
+        System.out.println(myClass3.hashCode());
         System.out.println(myClass1.equals(myClass2));
+        System.out.println(myClass2.equals(myClass1));
+        System.out.println(myClass1.equals(myClass3));
+        System.out.println(myClass3.equals(myClass1));
+        System.out.println(myClass2.equals(myClass3));
+        System.out.println(myClass3.equals(myClass2));
     }
 }
