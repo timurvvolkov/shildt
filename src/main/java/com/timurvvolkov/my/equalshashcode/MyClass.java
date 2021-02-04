@@ -29,14 +29,18 @@ public class MyClass {
         MyClass myClass1 = new MyClass(2, 1);
         MyClass myClass2 = new MyClass(2, 1);
         MyClass myClass3 = new MyClass(2, 2);
+        MyClass myClass4 = new MyClass(2, 2);
         System.out.println(myClass1.hashCode());
         System.out.println(myClass2.hashCode());
         System.out.println(myClass3.hashCode());
+        System.out.println(myClass4.hashCode());
         System.out.println(myClass1.equals(myClass2));
         System.out.println(myClass2.equals(myClass1));
         System.out.println(myClass1.equals(myClass3));
         System.out.println(myClass3.equals(myClass1));
         System.out.println(myClass2.equals(myClass3));
         System.out.println(myClass3.equals(myClass2));
+        System.out.println(myClass3.equals(myClass4));
+        System.out.println(myClass4.equals(myClass3));
     }
 }
