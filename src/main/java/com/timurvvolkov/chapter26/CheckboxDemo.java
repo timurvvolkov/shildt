@@ -11,7 +11,7 @@ public class CheckboxDemo extends Frame implements ItemListener {
     Checkbox windows, android, solaris, mac;
 
     public CheckboxDemo() {
-        setLayout(new FlowLayout());
+        setLayout(new FlowLayout(FlowLayout.LEFT));
 
         windows = new Checkbox("Windows", true);
         android = new Checkbox("Android");
