@@ -76,6 +76,21 @@ public class ImageFilterDemo extends Frame implements ActionListener {
                 fimg = pif.filter(this, img);
                 lim.set(fimg);
                 lab.setText("Filtered: " + a);
+            } else if (a.equals("Contrast")) {
+                pif = new Contrast();
+                fimg = pif.filter(this, img);
+                lim.set(fimg);
+                lab.setText("Filtered: " + a);
+            } else if (a.equals("Blur")) {
+                pif = new Blur();
+                fimg = pif.filter(this, img);
+                lim.set(fimg);
+                lab.setText("Filtered: " + a);
+            } else if (a.equals("Sharpen")) {
+                pif = new Sharpen();
+                fimg = pif.filter(this, img);
+                lim.set(fimg);
+                lab.setText("Filtered: " + a);
             } else {
                 pif = (PlugInFilter) (Class.forName(a)).getConstructor().newInstance();
                 fimg = pif.filter(this, img);
