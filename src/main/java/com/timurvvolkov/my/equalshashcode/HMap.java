@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 public class HMap {
     public static void main(String[] args) {
+        //https://habr.com/ru/post/128017
         Map<String, String> hashmap = new HashMap<>();
         String key = "0";
         hashmap.put(key, "zero");
@@ -19,6 +20,16 @@ public class HMap {
 
         key = "key";
         hashmap.put(key, "one");
+        hashCode = key.hashCode();
+        System.out.println(hashCode);
+        hashCode = hashCode ^ (hashCode >>> 20) ^ (hashCode >>> 12);
+        System.out.println(hashCode);
+        hashCode = hashCode ^ (hashCode >>> 7) ^ (hashCode >>> 4);
+        System.out.println(hashCode);
+        System.out.println(hashCode & (size - 1));
+
+        key = "idx";
+        hashmap.put(key, "two");
         hashCode = key.hashCode();
         System.out.println(hashCode);
         hashCode = hashCode ^ (hashCode >>> 20) ^ (hashCode >>> 12);
