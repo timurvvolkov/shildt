@@ -40,7 +40,7 @@ public class MyClass {
         System.out.println(myClass3.equals(myClass1));
         System.out.println(myClass2.equals(myClass3));
         System.out.println(myClass3.equals(myClass2));
-        System.out.println(myClass3.equals(myClass4));
-        System.out.println(myClass4.equals(myClass3));
+//        System.out.println(myClass3.equals(myClass4));
+//        System.out.println(myClass4.equals(myClass3));
     }
 }
